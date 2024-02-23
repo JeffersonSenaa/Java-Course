@@ -44,8 +44,11 @@ public class Main {
             } catch(IOException e){
                 System.out.println("Error: " + e.getMessage());
             }
-
+            finally{
+                sc.close();
+            }
         } 
+        
 
 
     }
