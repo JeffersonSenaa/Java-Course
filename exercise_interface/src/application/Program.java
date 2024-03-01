@@ -5,6 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import model.entities.Contract;
+import model.entities.Installment;
 import model.services.ContractService;
 import model.services.PaypalService;
 
@@ -28,8 +29,13 @@ public class Program {
 
         Contract contract = new Contract(numContrato, start, totalValue);
 
-        ContractService service = new ContractService();
-        service.processContract(contract, amount, new PaypalService());
+        ContractService service = new ContractService(new PaypalService());
+        service.processContract(contract, amount); 
+
+        System.out.println("Parcelas: ");
+        for (Installment parcel : contract.getInstallment()){
+            System.out.println(parcel);
+        }
 
         sc.close();
     }

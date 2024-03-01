@@ -1,12 +1,15 @@
 package model.entities;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Contract {
     private int number;
     private LocalDate date;
     private double totalValue;
-    private Installment installment;
+
+    List<Installment> Installment = new ArrayList<>();  //Composição com multiplicidade
 
     public Contract(){
 
@@ -37,6 +40,9 @@ public class Contract {
     @Override
     public String toString() {
         return "Contract [number=" + number + ", date=" + date + ", totalValue=" + totalValue + "]";
+    }
+    public List<Installment> getInstallment() {
+        return Installment;
     }
     
 }
