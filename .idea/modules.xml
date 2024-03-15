@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-Course.iml" filepath="$PROJECT_DIR$/.idea/Java-Course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise_exception/exercise_exception.iml" filepath="$PROJECT_DIR$/exercise_exception/exercise_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise_file/exercise_file.iml" filepath="$PROJECT_DIR$/exercise_file/exercise_file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise_interface/exercise_interface.iml" filepath="$PROJECT_DIR$/exercise_interface/exercise_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise_set/exercise_set.iml" filepath="$PROJECT_DIR$/exercise_set/exercise_set.iml" />
+    </modules>
+  </component>
+</project>
